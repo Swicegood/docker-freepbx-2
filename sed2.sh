@@ -1,0 +1,1 @@
+cat ./10-freepbx | sed '/rm -rf \/usr\/src\/freepbx.*/a fwconsole backup --restore' > ./tmp-10-freepbx
