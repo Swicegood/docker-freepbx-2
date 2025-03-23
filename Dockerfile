@@ -1,4 +1,4 @@
-FROM tiredofit/freepbx:14-latest
+FROM tiredofit/freepbx:15-latest
 LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
 
 
