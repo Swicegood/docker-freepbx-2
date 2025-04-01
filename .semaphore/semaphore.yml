@@ -12,9 +12,9 @@ blocks:
           commands:
             - checkout
             - echo $DOCKER_PASSWORD | docker login --username "$DOCKER_USERNAME" --password-stdin
-            - 'docker pull $DOCKER_USERNAME/docker-freepbx:latest || true'
-            - 'docker build --cache-from=$DOCKER_USERNAME/docker-freepbx:latest -t $DOCKER_USERNAME/docker-freepbx:latest .'
-            - 'docker push $DOCKER_USERNAME/docker-freepbx:latest'
+            - 'docker pull $DOCKER_USERNAME/docker-freepbx:14-latest || true'
+            - 'docker build --cache-from=$DOCKER_USERNAME/docker-freepbx:14-latest -t $DOCKER_USERNAME/docker-freepbx:14-latest .'
+            - 'docker push $DOCKER_USERNAME/docker-freepbx:14-latest'
       secrets:
         - name: dcokerhub
       env_vars:
